@@ -1,0 +1,54 @@
+:root{
+    --salmon: #ef9d71;
+    --black: #000;
+    --white: #fff;
+    --cyan: #aedee0;
+    --dsalmon: #532521;
+    --dcyan: #1f2f32;
+}
+body{
+    transition: background-color ease-out .5s;
+}
+.vdodiv{
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+*::selection{
+    background-color: var(--salmon);
+}
+body[theme="black"]{
+    background-color: var(--black);
+}
+body[theme="black"] .section{
+    color: var(--white);
+}
+body[theme="cyan"]{
+    background-color: var(--cyan);
+}
+body[theme="cyan"] .section{
+    color: var(--dcyan);
+}
+body[theme="salmon"]{
+    background-color: var(--salmon);
+}
+body[theme="salmon"] .section{
+    color: var(--black);
+}
+body[theme="white"]{
+    background-color: var(--white);
+}
+body[theme="white"] .section{
+    color: var(--black);
+}
+.craft {
+    overflow: visible; /* Ensure overflow is visible */
+}
+
+.ltext {
+    position: sticky;
+    top: 0; /* Stick to the top of the viewport */
+}
+
+/* Ensure there is enough content for scrolling */
+.cards {
+    height: 2000px; /* Example height to ensure scrolling */
+}
